@@ -1,0 +1,25 @@
+:root {
+  --main-bg-color: #ffd100;
+  --main-btn-color: #ff4500;
+}
+
+body {
+  font-family: 'Sarabun';
+}
+
+body.hasmodal {
+  @apply h-screen;
+  @apply overflow-hidden;
+}
+
+.text-primary {
+  color: var(--main-btn-color);
+}
+
+.bg-primary {
+  background-color: var(--main-bg-color);
+}
+
+.bg-secondary {
+  background-color: var(--main-btn-color);
+}

@@ -1,0 +1,7 @@
+version: '2'
+services:
+  findfit:
+    container_name: findfit
+    build: .
+    ports:
+      - '4000:3000'
