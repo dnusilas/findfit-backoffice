@@ -5,3 +5,19 @@ services:
     build: .
     ports:
       - '3200:3000'
+
+  uat:
+    container_name: findfit-backoffice-uat
+    build:
+      context: .
+      dockerfile: Dockerfile.uat
+    ports:
+      - '3200:3000'
+
+  production:
+    container_name: findfit-backoffice-production
+    build:
+      context: .
+      dockerfile: Dockerfile.production
+    ports:
+      - '3200:3000'
