@@ -1,7 +1,7 @@
 version: '2'
 services:
   findfit:
-    container_name: findfit
+    container_name: findfit-backoffice
     build: .
     ports:
-      - '4000:3000'
+      - '3200:3000'

@@ -43,7 +43,7 @@ export default {
 
   async fetchBookingLogs({ commit }, params) {
     try {
-      const { data } = await this.$axios.get('backoffice/course/get_list', {
+      const { data } = await this.$axios.get('backoffice/course/booking_logs', {
         params,
       })
       const res = switchCaseList(data)

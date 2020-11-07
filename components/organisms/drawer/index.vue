@@ -32,6 +32,12 @@ export default {
         },
         { label: 'Promo code', icon: 'tag', to: { name: 'promotion' } },
         { label: 'Points', icon: 'star-half-alt', to: { name: 'point' } },
+
+        {
+          label: 'Change Password',
+          icon: 'asterisk',
+          to: { name: 'change-password' },
+        },
       ],
     }
   },

@@ -1,6 +1,13 @@
 import Vue from 'vue'
 import { ValidationProvider, ValidationObserver, extend } from 'vee-validate'
-import { required, email, min, is, numeric } from 'vee-validate/dist/rules'
+import {
+  required,
+  email,
+  min,
+  is,
+  numeric,
+  confirmed,
+} from 'vee-validate/dist/rules'
 
 // Add a rule.
 extend('secret', {
@@ -25,6 +32,8 @@ extend('is', is)
 
 // Add the min rule
 extend('numeric', numeric)
+
+extend('confirmed', confirmed)
 
 // Register it globally
 Vue.component('ValidationProvider', ValidationProvider)

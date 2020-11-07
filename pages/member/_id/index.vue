@@ -29,12 +29,8 @@ export default {
     ...mapState('member', ['member', 'course', 'bookingLogs']),
   },
 
-  async mounted() {
+  mounted() {
     this.getMember()
-
-    await this.$axios.get('/backoffice/course/get_list', {
-      params: { member_id: this.id },
-    })
   },
 
   beforeDestroy() {

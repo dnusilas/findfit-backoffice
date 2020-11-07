@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mb-5">
     <label class="block mb-3">{{ label }}</label>
     <input
       v-model="val"
